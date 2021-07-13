@@ -5,4 +5,5 @@
       {% for todo in todo_list %}
           <p><a href="/todos/3/{{ todo.id }}/"><li>목록{{ forloop.counter }}</li></p></a>         
       {% endfor %}
+      <input type = button value="처음으로" onClick="location.href ='/todos/'">
 </fieldset>
