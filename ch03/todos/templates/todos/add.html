@@ -1,0 +1,22 @@
+<form action="{% url 'todos:add_2' %}" method="post"> 
+  {% csrf_token %}
+  <fieldset>
+    <h1>
+      {{whatto_list}}를 시작합니다.
+    </h1>
+    <p>
+      Title:
+      <input type='text' name='title' value=''>
+      </p>
+    <p>
+      Content:
+      <input type='text' name='content' value=''>
+      </p>
+    <p>
+      Due date:
+      <input type='datetime-local' name='due_date' >
+    </p>
+    <p>
+      <input type="submit" value="완료">
+    </p>
+  </fieldset>

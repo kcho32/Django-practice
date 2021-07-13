@@ -1,0 +1,14 @@
+<form action="{% url 'todos:modify_2' %}"  method="post"> 
+  {% csrf_token %}
+    <fieldset>
+      <h1>
+        어떤 일정을 수정하시겠습니까?
+      </h1>
+        {% for todo in todo_list %}
+            <p><li>Title:{{ todo.title }}
+              <input type = 'radio' name='data_modify' value= {{todo.id}} unchecked>
+            </li></p></a>          
+        {% endfor %}
+              
+      <p><input type = 'submit' value="수정"></p>
+    </fieldset>

@@ -1,0 +1,15 @@
+<fieldset>
+    <h1>
+        무엇을 하시겠습니까?.
+    </h1>
+    
+    {% if whatto_list %}
+        <ul>
+        {% for whatto in whatto_list %}
+            <p><li><a href="/todos/{{ whatto.id }}/">{{ whatto.what_to_do }}</a></li></p>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+</fieldset>

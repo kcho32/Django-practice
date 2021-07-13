@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls.apps.PollsConfig' #polls만으로도 되지만 이름 중복될 수 있으니 다 쓰는 것도 오류 방지에 도움 된다.
+    'polls.apps.PollsConfig', #polls만으로도 되지만 이름 중복될 수 있으니 다 쓰는 것도 오류 방지에 도움 된다.
+    'todos.apps.TodosConfig',
 ]
 
 MIDDLEWARE = [
